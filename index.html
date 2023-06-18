@@ -6,6 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mq.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <main>
@@ -21,18 +22,23 @@
         <form action="login.php" autocomplete="on" method="post">
 
     
-        <label for="iemail">icone</label>
-            <input type="email" name="email" id="iemail" placeholder="seu e-mail" required>
+        <div class="campo">
+            <span class="material-symbols-outlined">person</span>
+                <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email" required>
+                <label for="iemail">email</label>
+        </div>
 
        
-        <label for="isenha">icone</label>
-            <input type="password" name="senha" id="isenha" placeholder="sua senha" minlength="8" required>
+        <div class="campo">
+                <span class="material-symbols-outlined">vpn_key</span>
+                <input type="password" name="senha" id="isenha" placeholder="sua senha" minlength="8" autocomplete="current-password" required>
+                <label for="isenha">senha</label>
+        </div>
     
 
-            <p id="botoes">
-            <input class="entrar" type="submit" value="Entrar">
-            <input class="esquecer" type="reset" value="Esqueci a senha">
-            </p>
+            <input type="submit" value="Entrar">
+            <a href="esqueci.html" class="botao">
+                Esqueci a senha <span class="material-symbols-outlined">mail</span>
         </form>
     </div>
 </section>
